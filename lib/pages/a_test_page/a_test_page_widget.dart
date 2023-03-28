@@ -1,4 +1,3 @@
-import '/components/expiry_date_input_widget.dart';
 import '/flutter_flow/flutter_flow_icon_button.dart';
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
@@ -83,12 +82,22 @@ class _ATestPageWidgetState extends State<ATestPageWidget> {
               mainAxisSize: MainAxisSize.max,
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Expanded(
-                  child: wrapWithModel(
-                    model: _model.expiryDateInputModel,
-                    updateCallback: () => setState(() {}),
-                    child: ExpiryDateInputWidget(),
-                  ),
+                Row(
+                  mainAxisSize: MainAxisSize.max,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Todd added this text field to the Test Page',
+                      style: FlutterFlowTheme.of(context).bodyText1.override(
+                            fontFamily:
+                                FlutterFlowTheme.of(context).bodyText1Family,
+                            color: FlutterFlowTheme.of(context).primaryColor,
+                            fontSize: 16.0,
+                            useGoogleFonts: GoogleFonts.asMap().containsKey(
+                                FlutterFlowTheme.of(context).bodyText1Family),
+                          ),
+                    ),
+                  ],
                 ),
               ],
             ),
