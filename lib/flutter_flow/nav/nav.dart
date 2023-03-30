@@ -300,11 +300,11 @@ class FFRoute {
           final child = appStateNotifier.loading
               ? Center(
                   child: SizedBox(
-                    width: 60.0,
-                    height: 60.0,
-                    child: SpinKitThreeBounce(
+                    width: 30.0,
+                    height: 30.0,
+                    child: SpinKitWave(
                       color: FlutterFlowTheme.of(context).tertiaryColor,
-                      size: 60.0,
+                      size: 30.0,
                     ),
                   ),
                 )
